@@ -77,7 +77,7 @@ export default () => {
           place={{
             icon: icoInRecovery,
             name: "InRecovery",
-            position: "JavaScript developer",
+            position: "Front-end developer",
             date: "Aug 2019 - Present"
           }}
         />
