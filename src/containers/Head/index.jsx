@@ -149,7 +149,7 @@ export default () => {
           in={showDetails}
           mountOnEnter
           unmountOnExit
-          timeout={2600}
+          timeout={5600}
         >
           <Grid
             item
@@ -172,7 +172,7 @@ export default () => {
           </Grid>
         </Slide>
         <Grid item lg={4} sm={8} xs={6} md={5}>
-          <Grow in={showImage} timeout={1500}>
+          <Grow in={showImage} timeout={3500}>
             <img className={classes.myImage} src={icoMe} alt="my_avatar" />
           </Grow>
         </Grid>
@@ -181,7 +181,7 @@ export default () => {
           mountOnEnter
           unmountOnExit
           in={showExperiance}
-          timeout={1500}
+          timeout={2600}
         >
           <Grid
             item
