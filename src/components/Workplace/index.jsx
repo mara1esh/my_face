@@ -17,7 +17,7 @@ const Workplace = ({ place }) => {
   const classes = useStyles();
 
   return (
-    <Grid alignItems="center" className={classes.container}>
+    <Grid className={classes.container}>
       <Box display="flex" flexDirection="row">
         <img src={icon} className={classes.image} alt={`${name}'s icon`} />
         <Box>

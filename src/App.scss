@@ -6,6 +6,10 @@
 
   font-family: 'ZCOOL QingKe HuangYou', cursive;
   font-size: 18px;
+
+  &:empty {
+    height: 100vh;
+  }
 }
 
 img {
@@ -21,12 +25,11 @@ button {
   //min-height: 100vh;
   background-color: #000;
   margin: 0 auto;
+
+  &:empty {
+    height: 100vh;
+  }
 }
-
-
-// .tt {
-//   animation: slide 1s infinite;
-// }
 
 @keyframes slide {
   from {
