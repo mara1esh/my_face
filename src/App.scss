@@ -22,9 +22,10 @@ button {
 
 .background-container {
   width: 95vw;
-  //min-height: 100vh;
+  min-height: 100vh;
   background-color: #000;
   margin: 0 auto;
+
 
   &:empty {
     height: 100vh;

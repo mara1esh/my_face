@@ -8,7 +8,7 @@ import Footer from "../containers/Footer";
 
 const useStyles = makeStyles({
   container: {
-    '&empty': {
+    '&:empty': {
       height: '100%'
     }
   }
