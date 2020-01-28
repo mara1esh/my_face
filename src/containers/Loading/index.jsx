@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./styles.scss";
 import ReactLoading from "react-loading";
-//import "bootstrap/dist/css/bootstrap.css";
-import _ from "lodash";
 import cx from "classnames";
 
 const Loading = ({ setLoaded }) => {
@@ -11,13 +9,16 @@ const Loading = ({ setLoaded }) => {
     "Translation to English ...",
     "Loading emojis ...",
     "Grabbing your data ...",
-    "Connecting w/ Elon Musk ..."
+    "Connecting w/ Elon Musk ...",
+    "Starting server ...",
+    "Capturing your location ..."
   ]);
 
   const [faded, setFade] = useState(false);
   const [showButton, setShow] = useState(false);
 
-  const RenderRandomPhrase = () => phrases[_.random(phrases.length - 1)];
+  const RenderRandomPhrase = () =>
+    phrases[Math.floor(Math.random() * (phrases.length - 1))];
 
   useEffect(() => {
     if (!showButton) setTimeout(() => setFade(!faded), 2000);
@@ -35,15 +36,13 @@ const Loading = ({ setLoaded }) => {
 
   return (
     <div className="loading">
-      
- 
-        <div className={cx({hide: showButton})}>
+      <div className={cx({ hide: showButton })}>
         <LoadingContent />
         <RenderRandomPhrase />
-        </div>
+      </div>
 
-         <button
-          className={cx({
+      <button
+        className={cx({
           continue: true,
           showing: showButton
         })}
@@ -52,7 +51,7 @@ const Loading = ({ setLoaded }) => {
         Continue
       </button>
     </div>
-  )
+  );
 };
 
 export default Loading;

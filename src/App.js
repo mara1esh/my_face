@@ -52,8 +52,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <div className="App">
         <div className="background-container">
-          {/* remove ! operator below */}
-          {!isGreetingLoaded ? <Summary /> : <Loading {...loadingProps} />}
+          {isGreetingLoaded ? <Summary /> : <Loading {...loadingProps} />}
         </div>
       </div>
     </ThemeProvider>
